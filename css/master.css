@@ -1,0 +1,212 @@
+/* Global-Rules */
+* {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.special-heading {
+    font-size: 100px;
+    color: #ddd;
+    text-transform: capitalize;
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: -3px;
+    margin: 0;
+}
+
+.special-heading + p {
+    text-align: center;
+    margin: -30px 0px 0px;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width:768px){
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width:992px){
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width:1200px){
+    .container {
+        width: 1170px;
+    }
+}
+/* start-header */
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .logo {
+    text-transform: capitalize;
+    border: 1px solid #333;
+    padding: 5px 7px;
+    border-radius: 3px;
+}
+
+.container .icon {
+    width: 30px;
+    
+}
+
+.container .icon .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.container .icon .menu span {
+    height: 2px;
+    background-color: #333;
+    margin-bottom: 5px;
+}
+
+.container .icon .menu span:first-child {
+    width: 100%;
+}
+.container .icon .menu span:nth-child(2) {
+    width: 50%;
+} 
+.container .icon .menu span:last-child {
+    width: 100%;
+}
+
+/* End-header */
+/* Start-landing */
+ .landing {
+    position: relative;
+    background-image: url("../images/pexels-adrien-olichon-2387793.jpg");
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 91.67px);
+    color: #fff;
+}
+
+.landing .intro-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.landing .intro-text h1 {
+    margin: 0;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.landing .intro-text p {
+    font-size: 19px;
+    line-height: 1.8;
+}
+/* End-landing */
+/* Start-features */
+.features {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.features .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 20px;
+}
+
+.features .container .feat {
+    padding: 20px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.features .container .feat i {
+    font-size: 30px;
+}
+
+.features .container .feat h3 {
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+.features .container .feat p {
+    line-height: 1.6;
+    font-size: 17px;
+}
+/* End-features */
+
+.services {
+    padding-top: 60;
+    padding-bottom: 60px;
+}
+
+.services .services-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    gap: 30;
+    margin-top: 100px;
+}
+
+.col .ser {
+    display: flex;
+    margin-bottom: 40px
+}
+
+@media (max-width:767px){
+    .col .ser {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.col .ser i {
+    flex-basis: 60px;
+}
+
+.col .ser .text {
+    flex: 1;
+    text-transform: capitalize;
+}
+
+.col .ser .text h3 {
+    margin: 0 0 20px;
+}
+
+.col .ser .text p {
+    line-height: 1.6;
+}
+
+.col .image {
+    text-align: center;
+    position: relative;
+}
+
+@media (max-width:1199px){
+    .pic {
+        display: none;
+    }
+}
+.col .image::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: calc(100% + 100px);
+    right: 0;
+    top: -50px;
+    background-color: #ddd;
+    z-index: -1;
+}
